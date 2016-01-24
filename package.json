@@ -4,7 +4,7 @@
   "description": "generate icons and splash screens for a meteor project",
   "main": "index.js",
   "scripts": {
-    "test": "npm run _test_helpers && npm run _test_code_gen && npm run _test_sizes && npm run _test_image_gen",
+    "test": "npm run _test_helpers && npm run _test_code_gen && npm run _test_sizes && npm run _test_image_gen && npm run _test_up_to_date",
     "_test_helpers": "npm run _test_idx_translator && npm run _test_path_join && npm run _test_exec_question",
     "_test_exec_question": "node tests/exec-sync/echo-test.js | node tests/exec-sync/fail-on-output.js",
     "_test_idx_translator": "node tests/translate-idx.js",
@@ -15,6 +15,7 @@
     "_test_gen_1": "node ./tests/generate-images/inject-exe.js | diff - ./tests/generate-images/expected-result-with-echo.txt",
     "_test_gen_2": "node ./tests/generate-images/inject-execSync.js",
     "_test_gen_0": "node ./tests/generate-images/default-config.js",
+    "_test_up_to_date": "node ./tests/sizes.js ~",
     "try_out_icons": "npm run _sample_icon && node index.js images icons && node index.js code icons",
     "try_out_splash": "npm run _sample_splash && node index.js images launchScreens && node index.js code launchScreens",
     "_sample_icon": "convert -size 192x192 xc:skyblue -fill white -stroke white -draw 'circle 96,96 96,190' resources/icons.png",
