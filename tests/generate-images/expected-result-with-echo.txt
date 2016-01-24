@@ -1,0 +1,4 @@
+executing: echo /home/kevin/projects/todo-list/resources/hypotheticalType.png -resize 320x480^ -gravity center -crop 320x480+0+0 /home/kevin/projects/todo-list/resources/hypotheticalType/320x480.png
+/home/kevin/projects/todo-list/resources/hypotheticalType.png -resize 320x480^ -gravity center -crop 320x480+0+0 /home/kevin/projects/todo-list/resources/hypotheticalType/320x480.png
+executing: echo /home/kevin/projects/todo-list/resources/hypotheticalType.png -resize 640x960^ -gravity center -crop 640x960+0+0 /home/kevin/projects/todo-list/resources/hypotheticalType/640x960.png
+/home/kevin/projects/todo-list/resources/hypotheticalType.png -resize 640x960^ -gravity center -crop 640x960+0+0 /home/kevin/projects/todo-list/resources/hypotheticalType/640x960.png
