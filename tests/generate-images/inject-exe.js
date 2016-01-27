@@ -1,4 +1,4 @@
-Tinytest.add('icons and landing screens - Generator - inject echo but actually execute', function (assert) {
+Tinytest.add('icons and landing screens - Generator - inject echo but actually execute', function (test) {
     var sut = new IconsAndLaunchScreens.Generator();
 
     sut.imageSizes = {"hypotheticalType":mockImagesArray};
@@ -13,7 +13,7 @@ Tinytest.add('icons and landing screens - Generator - inject echo but actually e
 
     sut.execute("hypotheticalType");
     var expectedResult = Assets.getText("tests/generate-images/expected-result-with-echo.txt");
-    assert.equal(sut.console.output, expectedResult);
+    test.equal(sut.console.output, expectedResult);
 
 });
 

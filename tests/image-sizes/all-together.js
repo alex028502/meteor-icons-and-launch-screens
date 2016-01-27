@@ -1,18 +1,18 @@
 var util = require('util');
 
-Tinytest.add("icons and landing screens - imageSizes - finished list", function (assert) {
+Tinytest.add("icons and landing screens - imageSizes - finished list", function (test) {
     //first let's make sure our test helpers work:
-    assert.equal(imageSizeCheck("24x25z"), "25z in 24x25z doesn't look like a number");
-    assert.equal(imageSizeCheck("24x25x55"), "got 3 components instead of 2 in 24x25x55")
-    assert.isFalse(imageSizeCheck("55x55"));
+    test.equal(imageSizeCheck("24x25z"), "25z in 24x25z doesn't look like a number");
+    test.equal(imageSizeCheck("24x25x55"), "got 3 components instead of 2 in 24x25x55")
+    test.isFalse(imageSizeCheck("55x55"));
 
     var sut = IconsAndLaunchScreens.imageSizes.getImageSizes();
 
-    assert.isTrue(Object.keys(sut.icons).length);
-    assert.isTrue(Object.keys(sut.launchScreens).length);
+    test.isTrue(Object.keys(sut.icons).length);
+    test.isTrue(Object.keys(sut.launchScreens).length);
 
-    assert.isFalse(checkImageSizeArray(sut.icons));
-    assert.isFalse(checkImageSizeArray(sut.launchScreens));
+    test.isFalse(checkImageSizeArray(sut.icons));
+    test.isFalse(checkImageSizeArray(sut.launchScreens));
 });
 
 function imageSizeCheck(imageSize) {
