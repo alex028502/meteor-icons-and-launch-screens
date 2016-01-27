@@ -12,7 +12,7 @@ Tinytest.add('icons and landing screens - Generator - inject echo but actually e
   };
 
   sut.execute("hypotheticalType");
-  var expectedResult = Assets.getText("tests/generate-images/expected-result-with-echo.txt");
+  var expectedResult = Assets.getText("tests/generator/expected-result-with-echo.txt");
   test.equal(sut.console.output, expectedResult);
 
 });

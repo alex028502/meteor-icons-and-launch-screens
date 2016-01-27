@@ -34,12 +34,12 @@ Package.onTest(function (api) {
   api.add_files(["tests/image-sizes/sampleBuilderFile1.2.1.js", "tests/image-sizes/sampleBuilderFile68f27b2.js"], "server", {isAsset: true});
   api.add_files(["tests/image-sizes/expected-sample-sizes.js", "tests/image-sizes/extract-sizes.js"], "server");
   api.add_files("tests/image-sizes/all-together.js", "server");
-  api.add_files("tests/generate-images/default-config.js", "server");
-  api.add_files("tests/generate-images/inject-execSync.js", "server");
+  api.add_files("tests/generator/default-config.js", "server");
+  api.add_files("tests/generator/inject-execSync.js", "server");
   api.add_files("tests/mobile-config/expected-mobile-config-output.js", "server", {isAsset: true});
   api.add_files("tests/mobile-config/test.js", "server");
-  api.add_files("tests/generate-images/expected-result-with-echo.txt", "server", {isAsset: true});
-  api.add_files("tests/generate-images/inject-exe.js", "server");
+  api.add_files("tests/generator/expected-result-with-echo.txt", "server", {isAsset: true});
+  api.add_files("tests/generator/inject-exe.js", "server");
 });
 
 Npm.depends({
