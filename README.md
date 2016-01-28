@@ -28,6 +28,7 @@ This package is not on atomosphere (yet) so make your ci copy it in something li
 #thanks http://stackoverflow.com/a/8963061/5203563
 rm -rf packages/icons-and-launch-screens
 git clone --depth 1 --branch master <this repository> packages/icons-and-launch-screens
+#except don't actually put master - use a tag (or a hash might work)
 rm -rf packages/icons-and-launch-screens/.git
 echo "" >> packages/icons-and-launch-screens/.gitignore
 echo "#the following * was added so that this doesn't get committed to the local repo" >> packages/icons-and-launch-screens/.gitignore
