@@ -17,8 +17,8 @@ expectedSizes = {
     'iphone6': '750x1334',
     'iphone6p_portrait': '1242x2208',
     'iphone6p_landscape': '2208x1242',
-    'ipad_portrait': '768x1004',
-    'ipad_portrait_2x': '1536x2008',
+    'ipad_portrait': '768x1024', //these are 1004/2008 in the meteor code, but the reader should update it to 1024/2048
+    'ipad_portrait_2x': '1536x2048', //https://developer.apple.com/library/ios/documentation/UserExperience/Conceptual/MobileHIG/IconMatrix.html#//apple_ref/doc/uid/TP40006556-CH27-SW2
     'ipad_landscape': '1024x748',
     'ipad_landscape_2x': '2048x1496',
     'android_ldpi_portrait': '320x426',
